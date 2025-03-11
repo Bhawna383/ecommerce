@@ -1,0 +1,18 @@
+var mongoose = require("mongoose");
+var Schema = mongoose.Schema;
+var Vendor = new Schema({
+    VUserId:{type:String},
+    VUserPass:{type:String},
+    VName:{type:String},
+    VAddress:{type:String},
+    VConatct:{type:Number},
+    VEmail:{type:String},
+    VPicName:{type:String},
+    Vid:{type:Number},
+    Status:{type:String},
+
+},{
+    collection:"Vendor"
+}
+);
+module.exports=mongoose.model("Vendor",Vendor);
